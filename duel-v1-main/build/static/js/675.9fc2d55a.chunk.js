@@ -1,0 +1,23 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[675],{31675:(e,r,t)=>{t.r(r),t.d(r,{default:()=>l});var o=t(6262),i=t(47313),s=t(97890),a=t(14779),n=t(7591),d=t(50881),c=t(46417);function l(){const{referralCode:e}=(0,s.UO)(),r=(0,s.s0)(),[t]=(0,o.dd)((0,c.jsx)(d.Z,{code:e||"",onActivate:async()=>{try{await a.hi.post("/affiliate/activate",{code:e}),n.Z.success("Referral code updated!")}catch(t){406===t.response.status?13031===t.response.data.errorCode?n.Z.error("You can\u2019t activate your own code."):13032===t.response.data.errorCode?n.Z.error("This referral code doesn\u2019t exist."):13034===t.response.data.errorCode?n.Z.error("You can\u2019t activate code after 24 hours from sign up"):13033===t.response.data.errorCode&&n.Z.error("Failed! There was an error activating referral code."):503===t.response.status?n.Z.error("This function is blocked by admin."):n.Z.error("Failed! There was an error activating referral code.")}finally{r("/profile?tab=referral")}}}));return(0,i.useEffect)((()=>{e&&t()}),[e]),(0,c.jsx)("div",{})}},50881:(e,r,t)=>{t.d(r,{Z:()=>x});t(47313);var o=t(35933),i=t(93813),s=t(58470),a=t(51165),n=t(79671),d=t(25235),c=t(46417);const l=(0,d.default)(i.kC)`
+  flex-direction: column;
+  flex: 1;
+  background: linear-gradient(180deg, #132031 0%, #1a293c 100%);
+
+  padding: 40px 21px;
+
+  min-width: 350px;
+  width: 100vw;
+
+  ${e=>{let{theme:r}=e;return r.mediaQueries.md}} {
+    border: 2px solid #43546c;
+    border-radius: 15px;
+    width: 50vw;
+    padding: 40px 40px;
+  }
+
+  overflow: hidden auto;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`,x=e=>{let{code:r,onActivate:t,...d}=e;return(0,c.jsx)(o.u_,{...d,children:(0,c.jsxs)(l,{children:[(0,c.jsxs)(i.kC,{gap:20,alignItems:"center",children:[(0,c.jsx)(n.Z,{}),(0,c.jsx)(s.xv,{fontSize:"20px",fontWeight:600,letterSpacing:"2px",color:"white",textTransform:"uppercase",children:"Referral Code Activation"})]}),(0,c.jsx)(i.xu,{maxWidth:"500px",children:(0,c.jsxs)(s.xv,{color:"#768BAD",maxWidth:"720px",mt:"30px",children:["You are about to activate referral code\xa0",(0,c.jsx)(s.Dr,{fontWeight:600,children:r}),". When activated you will receive a 5% increase your Rakeback for 24 hours."]})}),(0,c.jsxs)(i.kC,{gap:20,flexDirection:["column","column","column","row"],justifyContent:"end",mt:"30px",children:[(0,c.jsx)(a.z,{p:"12px 20px",background:"#242F42",borderRadius:"5px",fontSize:"16px",fontWeight:600,color:"#768BAD",onClick:d.onDismiss,children:"Cancel"}),(0,c.jsx)(a.z,{p:"12px 20px",background:"#1A5032",borderRadius:"5px",fontSize:"16px",fontWeight:600,color:"#4FFF8B",onClick:async()=>{await t(),d.onDismiss()},children:"Activate Code"})]})]})})}},79671:(e,r,t)=>{t.d(r,{Z:()=>i});t(47313);var o=t(46417);function i(){return(0,o.jsxs)("svg",{width:"22",height:"22",viewBox:"0 0 22 22",fill:"none",xmlns:"http://www.w3.org/2000/svg",style:{flex:"none"},children:[(0,o.jsx)("path",{d:"M2.82935 13.69C2.75911 13.2656 2.72009 12.8296 2.72009 12.3847C2.72009 9.02414 4.83888 6.16105 7.81415 5.05386",stroke:"#4FFF8B",strokeWidth:"1.951",strokeMiterlimit:"10"}),(0,o.jsx)("path",{d:"M15.5225 18.4065C14.1685 19.5283 12.4321 20.2014 10.5377 20.2014C8.6433 20.2014 6.90691 19.5283 5.55292 18.4065",stroke:"#4FFF8B",strokeWidth:"1.951",strokeMiterlimit:"10"}),(0,o.jsx)("path",{d:"M13.2623 5.05289C16.2375 6.16008 18.3563 9.02317 18.3563 12.3838C18.3563 12.8276 18.3193 13.2637 18.2471 13.689",stroke:"#4FFF8B",strokeWidth:"1.951",strokeMiterlimit:"10"}),(0,o.jsx)("path",{d:"M13.3062 4.56708C13.3062 4.73291 13.2915 4.8968 13.2652 5.05483C13.036 6.35029 11.9014 7.33555 10.5416 7.33555C9.18078 7.33555 8.04628 6.35322 7.81801 5.05483C7.7907 4.8968 7.77704 4.73291 7.77704 4.56708C7.77704 3.0375 9.01592 1.79861 10.5455 1.79861C12.0712 1.79861 13.3062 3.03847 13.3062 4.56708V4.56708Z",stroke:"#4FFF8B",strokeWidth:"1.951",strokeMiterlimit:"10"}),(0,o.jsx)("path",{d:"M19.7054 17.6749C18.9426 18.9996 17.2491 19.4532 15.9254 18.6874C15.781 18.6045 15.6474 18.5099 15.5235 18.4045C14.5187 17.5559 14.2339 16.0848 14.9138 14.9074C15.5947 13.727 17.0111 13.2393 18.25 13.688C18.4012 13.7436 18.5505 13.8119 18.6939 13.8948C20.0147 14.6606 20.4683 16.354 19.7054 17.6749V17.6749Z",stroke:"#4FFF8B",strokeWidth:"1.951",strokeMiterlimit:"10"}),(0,o.jsx)("path",{d:"M5.55293 18.4065C5.43099 18.5118 5.29442 18.6035 5.15102 18.6894C3.82629 19.4522 2.13478 18.9996 1.37096 17.6768C0.607147 16.355 1.06075 14.6625 2.38353 13.8967C2.5279 13.8138 2.67618 13.7455 2.82738 13.6899C4.06431 13.2412 5.48074 13.7309 6.16359 14.9093C6.84253 16.0877 6.55769 17.5578 5.55293 18.4065V18.4065Z",stroke:"#4FFF8B",strokeWidth:"1.951",strokeMiterlimit:"10"})]})}}}]);
